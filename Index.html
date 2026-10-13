@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moh Zaky | Portofolio Atlet Tenis Meja</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        pingpong: {
+                            50: '#f0fdf4',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            900: '#14532d',
+                        },
+                        sportdark: '#0f172a',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .hero-pattern {
+            background-color: #0f172a;
+            background-image: radial-gradient(#1e293b 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 antialiased selection:bg-pingpong-500 selection:text-white">
+
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-full bg-pingpong-500 flex items-center justify-center text-white font-bold shadow-lg shadow-pingpong-500/30">
+                        <i class="fa-solid fa-table-tennis-paddle-ball text-lg"></i>
+                    </div>
+                    <span class="font-bold text-lg tracking-wider">MOH ZAKY</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-slate-300 hover:text-pingpong-500 transition-colors text-sm font-medium">Tentang</a>
+                    <a href="#achievements" class="text-slate-300 hover:text-pingpong-500 transition-colors text-sm font-medium">Prestasi & Tropi</a>
+                    <a href="#skills" class="text-slate-300 hover:text-pingpong-500 transition-colors text-sm font-medium">Keahlian</a>
+                    <a href="#gallery" class="text-slate-300 hover:text-pingpong-500 transition-colors text-sm font-medium">Galeri</a>
+                    <a href="#contact" class="px-4 py-2 rounded-full bg-pingpong-600 hover:bg-pingpong-700 text-white font-semibold text-sm transition-all shadow-md shadow-pingpong-600/30">Kontak</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-slate-300 hover:text-white focus:outline-none p-2">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-4 pt-2 pb-4 space-y-2">
+            <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-slate-800">Tentang</a>
+            <a href="#achievements" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-slate-800">Prestasi & Tropi</a>
+            <a href="#skills" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-slate-800">Keahlian</a>
+            <a href="#gallery" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-slate-800">Galeri</a>
+            <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium bg-pingpong-600 text-white text-center">Kontak</a>
+        </div>
+    </nav>
+
+    <header class="hero-pattern pt-32 pb-20 lg:pt-44 lg:pb-32 px-4 sm:px-6 lg:px-8 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-pingpong-500/10 border border-pingpong-500/30 text-pingpong-400 text-xs font-semibold uppercase tracking-wider">
+                    <i class="fa-solid fa-award"></i>
+                    <span>Atlet Tenis Meja Berprestasi</span>
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                    Halo, Saya <span class="text-transparent bg-clip-text bg-gradient-to-r from-pingpong-400 to-emerald-300">Moh Zaky</span>
+                </h1>
+                <p class="text-lg text-slate-400 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                    Pemain dan atlet tenis meja yang berdedikasi tinggi. Berpengalaman bertanding di tingkat provinsi serta telah mengoleksi berbagai piala dan trofi bergengsi dengan mental juang pantang menyerah.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 pt-2">
+                    <a href="#achievements" class="px-8 py-3.5 rounded-xl bg-pingpong-600 hover:bg-pingpong-700 text-white font-semibold transition-all shadow-lg shadow-pingpong-600/30 flex items-center justify-center space-x-2">
+                        <span>Lihat Prestasi</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="px-8 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 font-semibold transition-all flex items-center justify-center space-x-2">
+                        <span>Hubungi Saya</span>
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-3xl overflow-hidden shadow-2xl border-4 border-slate-800 bg-gradient-to-br from-slate-800 to-slate-900 group">
+                    <img src="https://placehold.co/500x500/1e293b/22c55e?text=Moh+Zaky" alt="Moh Zaky Atlet Tenis Meja" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/500x500/1e293b/22c55e?text=Moh+Zaky'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex flex-col justify-end p-6">
+                        <span class="text-xs font-semibold uppercase text-pingpong-400 tracking-wider">Spesialisasi</span>
+                        <span class="text-lg font-bold text-white">Offensive Loop & Fast Attack</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Tentang Moh Zaky</h2>
+                <div class="w-20 h-1.5 bg-pingpong-500 mx-auto rounded-full"></div>
+                <p class="text-slate-400 text-base sm:text-lg">
+                    Perjalanan di dunia tenis meja yang dibangun atas disiplin, kerja keras, dan kecintaan mendalam terhadap olahraga ini.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-slate-800/60 border border-slate-700/60 p-8 rounded-2xl shadow-lg hover:border-pingpong-500/50 transition-all group">
+                    <div class="w-14 h-14 rounded-xl bg-pingpong-500/10 text-pingpong-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-pingpong-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-trophy"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Koleksi Trofi</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Aktif mengikuti berbagai kejuaraan dan berhasil meraih banyak trofi kejuaraan baik tingkat lokal maupun regional.
+                    </p>
+                </div>
+                <div class="bg-slate-800/60 border border-slate-700/60 p-8 rounded-2xl shadow-lg hover:border-pingpong-500/50 transition-all group">
+                    <div class="w-14 h-14 rounded-xl bg-pingpong-500/10 text-pingpong-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-pingpong-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-medal"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Tingkat Provinsi</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Pernah mewakili daerah dan bertanding melawan atlet-atlet terbaik di ajang perlombaan tingkat provinsi dengan performa optimal.
+                    </p>
+                </div>
+                <div class="bg-slate-800/60 border border-slate-700/60 p-8 rounded-2xl shadow-lg hover:border-pingpong-500/50 transition-all group">
+                    <div class="w-14 h-14 rounded-xl bg-pingpong-500/10 text-pingpong-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-pingpong-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Mental Juara</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Memiliki fokus tinggi, ketahanan fisik prima, dan strategi taktis yang matang di setiap pertandingan meja.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="py-20 px-4 sm:px-6 lg:px-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Prestasi & Riwayat Lomba</h2>
+                <div class="w-20 h-1.5 bg-pingpong-500 mx-auto rounded-full"></div>
+                <p class="text-slate-400 text-base sm:text-lg">
+                    Daftar pencapaian membanggakan dalam kompetisi tenis meja dari berbagai level.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Achievement Card 1 -->
+                <div class="bg-gradient-to-br from-slate-800 to-slate-900 border-2 border-pingpong-500/30 rounded-3xl p-8 shadow-xl relative overflow-hidden flex flex-col justify-between">
+                    <div class="absolute top-0 right-0 transform translate-x-4 -translate-y-4 w-32 h-32 bg-pingpong-500/10 rounded-full blur-xl pointer-events-none"></div>
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="px-3.5 py-1.5 rounded-full bg-pingpong-500 text-white font-bold text-xs uppercase tracking-wider shadow-md">
+                                Tingkat Provinsi
+                            </span>
+                            <i class="fa-solid fa-trophy text-pingpong-400 text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Peserta & Pesaing Ketat Lomba Tingkat Provinsi</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                            Berpartisipasi dalam kejuaraan tenis meja tingkat provinsi, bersaing dengan atlet-atlet berbakat dari berbagai kabupaten/kota dan menunjukkan kemampuan terbaik di meja pertandingan.
+                        </p>
+                    </div>
+                    <div class="flex items-center text-xs text-slate-400 space-x-4 pt-4 border-t border-slate-700/50">
+                        <span><i class="fa-solid fa-calendar-days text-pingpong-400 mr-1.5"></i> Kompetisi Resmi</span>
+                        <span><i class="fa-solid fa-location-dot text-pingpong-400 mr-1.5"></i> Provinsi</span>
+                    </div>
+                </div>
+
+                <!-- Achievement Card 2 -->
+                <div class="bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 rounded-3xl p-8 shadow-xl relative overflow-hidden flex flex-col justify-between">
+                    <div class="absolute top-0 right-0 transform translate-x-4 -translate-y-4 w-32 h-32 bg-emerald-500/10 rounded-full blur-xl pointer-events-none"></div>
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="px-3.5 py-1.5 rounded-full bg-emerald-600 text-white font-bold text-xs uppercase tracking-wider shadow-md">
+                                Perolehan Trofi
+                            </span>
+                            <i class="fa-solid fa-award text-emerald-400 text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Juara & Koleksi Trofi Kejuaraan</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                            Meraih podium juara dan membawa pulang sejumlah trofi kemenangan dalam turnamen lokal dan regional sebagai bukti konsistensi latihan.
+                        </p>
+                    </div>
+                    <div class="flex items-center text-xs text-slate-400 space-x-4 pt-4 border-t border-slate-700/50">
+                        <span><i class="fa-solid fa-medal text-emerald-400 mr-1.5"></i> Multiple Trophies</span>
+                        <span><i class="fa-solid fa-star text-emerald-400 mr-1.5"></i> Podium Prestasi</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-900/50 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Keahlian & Kemampuan Bermain</h2>
+                <div class="w-20 h-1.5 bg-pingpong-500 mx-auto rounded-full"></div>
+                <p class="text-slate-400 text-base sm:text-lg">
+                    Atribut teknis dan mental yang dikuasai Moh Zaky dalam setiap pertandingan.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-slate-800/80 border border-slate-700 p-6 rounded-2xl text-center space-y-3">
+                    <div class="w-12 h-12 bg-pingpong-500/10 text-pingpong-400 rounded-xl flex items-center justify-center mx-auto text-xl font-bold">
+                        <i class="fa-solid fa-hand-back-fist"></i>
+                    </div>
+                    <h3 class="font-bold text-white text-lg">Forehand Loop</h3>
+                    <p class="text-xs text-slate-400">Pukulan serang berputar bertenaga tinggi untuk mendikte permainan.</p>
+                </div>
+                <div class="bg-slate-800/80 border border-slate-700 p-6 rounded-2xl text-center space-y-3">
+                    <div class="w-12 h-12 bg-pingpong-500/10 text-pingpong-400 rounded-xl flex items-center justify-center mx-auto text-xl font-bold">
+                        <i class="fa-solid fa-bolt-lightning"></i>
+                    </div>
+                    <h3 class="font-bold text-white text-lg">Fast Attack</h3>
+                    <p class="text-xs text-slate-400">Kecepatan reaksi kilat di dekat meja saat reli cepat.</p>
+                </div>
+                <div class="bg-slate-800/80 border border-slate-700 p-6 rounded-2xl text-center space-y-3">
+                    <div class="w-12 h-12 bg-pingpong-500/10 text-pingpong-400 rounded-xl flex items-center justify-center mx-auto text-xl font-bold">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="font-bold text-white text-lg">Solid Defense</h3>
+                    <p class="text-xs text-slate-400">Pertahanan ulet dan blok akurat menghadapi smash lawan.</p>
+                </div>
+                <div class="bg-slate-800/80 border border-slate-700 p-6 rounded-2xl text-center space-y-3">
+                    <div class="w-12 h-12 bg-pingpong-500/10 text-pingpong-400 rounded-xl flex items-center justify-center mx-auto text-xl font-bold">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h3 class="font-bold text-white text-lg">Mental Taktis</h3>
+                    <p class="text-xs text-slate-400">Konsentrasi penuh dan pembacaan strategi lawan yang tajam.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-20 px-4 sm:px-6 lg:px-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Galeri Momen & Trofi</h2>
+                <div class="w-20 h-1.5 bg-pingpong-500 mx-auto rounded-full"></div>
+                <p class="text-slate-400 text-base sm:text-lg">
+                    Dokumentasi kegiatan latihan, suasana tanding, dan koleksi trofi penghargaan.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="rounded-2xl overflow-hidden shadow-lg border border-slate-700 bg-slate-800 group relative h-64">
+                    <img src="https://placehold.co/600x400/1e293b/22c55e?text=Trofi+Kejuaraan" alt="Trofi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/1e293b/22c55e?text=Trofi'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent flex items-end p-6">
+                        <div>
+                            <span class="text-xs font-semibold text-pingpong-400 uppercase tracking-wider">Penghargaan</span>
+                            <h4 class="text-lg font-bold text-white">Koleksi Trofi Utama</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-lg border border-slate-700 bg-slate-800 group relative h-64">
+                    <img src="https://placehold.co/600x400/1e293b/16a34a?text=Lomba+Provinsi" alt="Provinsi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/1e293b/16a34a?text=Provinsi'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent flex items-end p-6">
+                        <div>
+                            <span class="text-xs font-semibold text-pingpong-400 uppercase tracking-wider">Turnamen</span>
+                            <h4 class="text-lg font-bold text-white">Ajang Tingkat Provinsi</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-lg border border-slate-700 bg-slate-800 group relative h-64 sm:col-span-2 lg:col-span-1">
+                    <img src="https://placehold.co/600x400/1e293b/15803d?text=Latihan+Fokus" alt="Latihan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/1e293b/15803d?text=Latihan'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent flex items-end p-6">
+                        <div>
+                            <span class="text-xs font-semibold text-pingpong-400 uppercase tracking-wider">Persiapan</span>
+                            <h4 class="text-lg font-bold text-white">Sesi Latihan Rutin</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-900/50 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Hubungi Moh Zaky</h2>
+                <div class="w-20 h-1.5 bg-pingpong-500 mx-auto rounded-full"></div>
+                <p class="text-slate-400 text-base">
+                    Tertarik berkolaborasi, sparring partner, atau mengundang kejuaraan? Kirimkan pesan di bawah ini.
+                </p>
+            </div>
+            
+            <div class="bg-slate-800/80 border border-slate-700 p-8 sm:p-10 rounded-3xl shadow-xl">
+                <form id="contact-form" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-slate-300 mb-2">Nama Lengkap</label>
+                            <input type="text" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-pingpong-500 transition-colors text-sm" placeholder="Masukkan nama Anda">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-300 mb-2">Email / No. WhatsApp</label>
+                            <input type="text" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-pingpong-500 transition-colors text-sm" placeholder="Contoh: 08123456789">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-300 mb-2">Pesan</label>
+                        <textarea rows="4" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-pingpong-500 transition-colors text-sm resize-none" placeholder="Tulis pesan atau undangan turnamen..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-4 rounded-xl bg-pingpong-600 hover:bg-pingpong-700 text-white font-bold transition-all shadow-lg shadow-pingpong-600/30 flex items-center justify-center space-x-2">
+                        <span>Kirim Pesan</span>
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Modal Box (No Alert) -->
+    <div id="success-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/80 backdrop-blur-sm hidden">
+        <div class="bg-slate-900 border border-slate-700 rounded-2xl p-8 max-w-sm w-full mx-4 text-center space-y-4 shadow-2xl">
+            <div class="w-16 h-16 bg-pingpong-500/20 text-pingpong-400 rounded-full flex items-center justify-center mx-auto text-3xl">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white">Pesan Terkirim!</h3>
+            <p class="text-slate-400 text-sm">Terima kasih telah menghubungi Moh Zaky. Pesan Anda akan segera dibaca.</p>
+            <button id="close-modal" class="w-full py-2.5 rounded-xl bg-pingpong-600 hover:bg-pingpong-700 text-white font-semibold text-sm transition-all">Tutup</button>
+        </div>
+    </div>
+
+    <footer class="bg-slate-950 border-t border-slate-800 py-12 px-4 sm:px-6 lg:px-8 text-center text-slate-500 text-sm">
+        <div class="max-w-7xl mx-auto space-y-4">
+            <div class="flex items-center justify-center space-x-2">
+                <div class="w-8 h-8 rounded-full bg-pingpong-500 flex items-center justify-center text-white font-bold">
+                    <i class="fa-solid fa-table-tennis-paddle-ball text-sm"></i>
+                </div>
+                <span class="font-bold text-white tracking-wider">MOH ZAKY</span>
+            </div>
+            <p>© 2026 Moh Zaky. Seluruh Hak Cipta Dilindungi. Atlet Tenis Meja Berprestasi Tingkat Provinsi.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Contact Form Submission
+        const contactForm = document.getElementById('contact-form');
+        const successModal = document.getElementById('success-modal');
+        const closeModal = document.getElementById('close-modal');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            successModal.classList.remove('hidden');
+            contactForm.reset();
+        });
+
+        closeModal.addEventListener('click', () => {
+            successModal.classList.add('hidden');
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target === successModal) {
+                successModal.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
